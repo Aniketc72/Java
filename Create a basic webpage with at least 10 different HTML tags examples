@@ -1,0 +1,113 @@
+<!DOCTYPE>
+<html>
+
+<head>
+    <title>MY FIRST WEB PAGE</title>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor <strong>sit amet consectetur adipisicing elit.</strong> Magnam facere exercitationem dolor
+        <em>molestias maiores cum? Quaerat nulla eaque veniam</em>ullam et dolorum sit
+        voluptatibus illum, veritatis dolor? <mark color="pink">Ad maxime blanditiis</mark>
+        voluptas! <br> Reiciendis harum sed et beatae ratione reprehenderit assumenda ipsum maiores itaque dolores, in
+        consequuntur dicta vitae qui necessitatibus <ins>perspiciatis doloremque aliquid</ins>,
+        <hr>tempore dolorum? Id repellat
+        distinctio similique architecto, voluptas doloremque iste blanditiis exercitationem, <del>corrupti ex molestiae
+            iure</del>
+        culpa non, itaque incidunt vero aspernatur mollitia aperiam in! Ipsam delectus aspernatur aliquid voluptatem
+    </p>
+    <img src="images/Ak.jpg" height="500" width="500"><br>
+    <a href="https://www.javatpoint.com/html-image" target="_blank"> Go to this website</a><br>
+    <capion>This is my First Table</capion>
+    <table border="2" width="500" height="500">
+        <thead>
+            <tr>
+                <th>NAME</th>
+                <th>SRN</th>
+                <th>FROM</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Aniket</td>
+                <td>R20CA200</td>
+                <td>Delhi</td>
+            </tr>
+            <tr>
+                <td>Krupa</td>
+                <td>R20CA222</td>
+                <td>Jharkhand</td>
+            </tr>
+            <tr>
+                <td>Gaurav</td>
+                <td>R20CA217</td>
+                <td>Bihar</td>
+            </tr>
+            <tr>
+                <td>Kuldeep</td>
+                <td>R20CA224</td>
+                <td>Maharastra</td>
+            </tr>
+        </tbody>
+    </table><br>
+    <ol type="A">
+        <li>ABC</li>
+        <li>DEF</li>
+        <li>GHI</li>
+    </ol>
+    <br>
+    <p>Nested Lists</p>
+    <ul type="circle">
+        <li>ABC</li>
+        <li>DEF</li>
+        <li>GHI</li>
+    </ul>
+    <ol>
+        <li>HTML</li>
+        <ul>
+            <li>HTML 2.0</li>
+            <li>HTML 4.0</li>
+            <li>HTML 5.0</li>
+        </ul>
+        <li>JAVA</li>
+        <ul>
+            <li>Java is OOPS Programming Lang</li>
+            <li>Java Is very useful for</li>
+            <li>Java is invented in 1983</li>
+        </ul>
+    </ol>
+    <br>
+    <form>
+        <fieldset>
+            <legend>REGISTRATION FORM</legend>
+            <label>First Name:</label><input type="text" name="Firstname"><br>
+
+            <label>Last Name:</label><input type="text" name="Lastname"><br>
+            <label>Username:</label><input type="username" name="Username"><br>
+            <label>Password:</label><input type="Password" name="Password"><br>
+            <label>Email:</label><input type="email" name="email"><br>
+            <label>Gender:</label><input type="radio" name="male" value="Male">male
+            <input type="radio" name="female" value="feMale">female <input type="radio" name="other" value="other">other<br>
+            <label>Sports:</label><input type="checkbox" name="Cricket" value="Cricket">Cricket
+            <input type="checkbox" name="Football" value="Football">Football <input type="checkbox" name="Chess" value="Chess">Chess<br>
+            <input type="file" name="file"><br>
+            <label>Date:</label><input type="date" name="DOB"><br>
+            <label>Date:</label><input type="datetime-local" name="akdob"><br>
+            <label>Month:</label><input type="month" name="month"><br>
+            <label>Address:</label><input type="textarea" name="Address"><br>
+            <label>Enter your AGE:</label><input type="number" name="Age"><br>
+            <input type="reset" name="Don't Click">
+            <input type="submit" name="Click Me"><br>
+
+        </fieldset>
+    </form>
+
+
+    
+
+
+
+
+</body>
+
+</html>
