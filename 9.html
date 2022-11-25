@@ -1,0 +1,102 @@
+<html>
+<head>
+<title>Employee</title>
+<script>
+function calculate()
+{
+var b,da,hra,cca,pf,pt,gp,np;
+b=parseInt(document.emp.basic.value);
+if(b>=5000)
+{
+da=0.7*b; // 70% of basic --> da=(70/100)*b;
+hra=0.3*b; // 30% of basic
+cca=0.1*b;
+pf=0.02*b;
+pt=0.01*b;
+gp=b+da+hra+cca;
+np=gp-(pf+pt);
+document.emp.da.value=da;
+document.emp.hra.value=hra;
+document.emp.cca.value=cca;
+document.emp.pf.value=pf;
+document.emp.pt.value=pt;
+document.emp.gp.value=gp;
+document.emp.np.value=np;
+}
+else
+{
+alert("Basic salary should be 5000 or more");
+document.emp.basic.value="";
+document.emp.basic.focus();
+}
+}
+</script>
+<style>
+body{
+background-color:white;
+color:purple;
+}
+</style>
+</head>
+<body>
+<form name="emp">
+<table align="center" cellpadding="10">
+<tr><th colspan="2">EMPLOYEE BASIC DETAILS</th></tr>
+<tr>
+<td><label>EMPLOYEE CODE</label></td>
+<td><input type="text" name="eid" /></td>
+</tr>
+<tr>
+<td><label>EMPLOYEE NAME</label></td>
+<td><input type="text" name="ename" /></td>
+</tr>
+<tr>
+<td><label>DEPARTMENT</label></td>
+<td>
+<select name="dept" style="width:170px;height:20px;">
+<option>SELECT</option>
+<option>HR</option>
+<option>IT</option>
+<option>ACCOUNTS</option>
+</select>
+</td>
+</tr>
+<tr>
+<td><label>BASIC SALARY</label></td>
+<td><input type="text" name="basic" id="bp" /></td>
+</tr>
+<tr><th colspan="2">ALLOWANCES</th></tr>
+<tr>
+<td><label>DA</label></td>
+<td><input type="text" name="da" readonly="readonly" /></td>
+</tr>
+<tr>
+<td><label>HRA</label></td>
+<td><input type="text" name="hra" readonly="readonly" /></td>
+</tr>
+<tr>
+<td><label>CCA</label></td>
+<td><input type="text" name="cca" readonly="readonly" /></td>
+</tr>
+<tr><th colspan="2">DEDUCTIONS</th></tr>
+<tr>
+<td><label>PF</label></td>
+<td><input type="text" name="pf" readonly="readonly" /></td>
+</tr>
+<tr>
+<td><label>PTAX</label></td>
+<td><input type="text" name="pt" readonly="readonly" /></td>
+</tr>
+<tr><th colspan="2">SALARY</th></tr>
+<tr>
+<td><label>GROSS PAY</label></td>
+<td><input type="text" name="gp" readonly="readonly" /></td>
+</tr>
+<tr>
+<td><label>NET PAY</label></td>
+<td><input type="text" name="np" readonly="readonly" /></td>
+</tr>
+</table>
+</form>
+</body>
+</html>
